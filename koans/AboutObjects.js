@@ -60,16 +60,16 @@ describe("About Objects", function () {
 
     it("should have the bomb", function () {
 
-      var hasBomb = "theBomb" in meglomaniac;
+      var hasBomb = "theBomb" in meglomaniac; //in is an operator that returns true if the specified property is in the specified object.
      
-      expect(hasBomb).toBe(FILL_ME_IN);
+      expect(hasBomb).toBe(true);
     });
 
     it("should not have the detonator however", function () {
 
       var hasDetonator = "theDetonator" in meglomaniac;
      
-      expect(hasDetonator).toBe(FILL_ME_IN);
+      expect(hasDetonator).toBe(false);
     });    
   });
 
