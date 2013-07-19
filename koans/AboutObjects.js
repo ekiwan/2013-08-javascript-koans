@@ -24,12 +24,12 @@ describe("About Objects", function () {
       henchman: "Pinky",
       battleCry: function (noOfBrains) {
         return "They are " + this.henchman + " and the" +
-          Array(noOfBrains + 1).join(" " + this.mastermind);
+          Array(noOfBrains + 1).join(" " + this.mastermind); //Having trouble understanding the difference between a function and a method
       }
     };
    
     var battleCry = meglomaniac.battleCry(4);
-    expect(FILL_ME_IN).toMatch(battleCry);
+    expect('They are Pinky and the Brain Brain Brain Brain').toMatch(battleCry);
   });
 
   it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
