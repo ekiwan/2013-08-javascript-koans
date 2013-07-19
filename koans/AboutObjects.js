@@ -34,7 +34,7 @@ describe("About Objects", function () {
 
   it("should confirm that when a function is attached to an object, 'this' refers to the object", function () {
     var currentDate = new Date()
-    var currentYear = (currentDate.getFullYear());
+    var currentYear = (currentDate.getFullYear()); //why does this need to be wrapped in ()?
     var meglomaniac = { 
       mastermind: "James Wood", 
       henchman: "Adam West",
@@ -44,8 +44,8 @@ describe("About Objects", function () {
       }
     };
    
-    expect(currentYear).toBe(FILL_ME_IN);
-    expect(meglomaniac.calculateAge()).toBe(FILL_ME_IN);
+    expect(currentYear).toBe(2013);
+    expect(meglomaniac.calculateAge()).toBe(43);
   });
 
   describe("'in' keyword", function () {
